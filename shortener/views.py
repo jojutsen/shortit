@@ -28,7 +28,7 @@ def home(request):
                 short_url = UrlsDatabase.objects.get(url=cur_url).uuid
                 context={
                     'url' : cur_url,
-                    'short_url' : "http://127.0.0.1:8000/"+short_url,
+                    'short_url' : "https://short-it0.herokuapp.com/"+short_url,
                 }
             elif my_form.is_valid():
                 new_url = my_form.cleaned_data['url']
@@ -39,7 +39,7 @@ def home(request):
                 add_url.save()
                 context={
                     'url' : new_url,
-                    'short_url' : "127.0.0.1:8000/"+uid,
+                    'short_url' : "https://short-it0.herokuapp.com/"+uid,
                 }
 
         except ValidationError:
