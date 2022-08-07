@@ -1,0 +1,60 @@
+  html {
+      height: 100%;
+  }
+
+  body {
+      height: 100%;
+  }
+
+  .container {
+      position: absolute;
+      margin: 10% auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 250px;
+  }
+
+  .word {
+      margin: 40px auto;
+      max-width: 50%;
+      text-align: center;
+  }
+
+  .main-content {
+      max-width: 70%;
+      margin: auto;
+  }
+
+  .result {
+      max-width: 100%;
+      margin: 40px auto;
+      font-size: larger;
+  }
+
+  .button-10 {
+      display: flex;
+      align-items: center;
+      padding: 1px 5px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+      border-radius: 4px;
+      border: none;
+
+      color: #fff;
+      background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+      background-origin: border-box;
+      box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+
+      margin: 40px auto;
+      max-width: 70%;
+  }
+
+  .button-10:focus {
+      box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+      outline: 0;
+  }
