@@ -75,10 +75,11 @@
         /* Select the text field */
 
         /* Copy the text inside the text field */
-        navigator.clipboard.writeText(ele);
+        navigator.clipboard.writeText(ele).then(() => {
 
-        /* Alert the copied text */
-        alert("Copied the text: " + ele);
+            /* Alert the copied text */
+            alert("Copied the text: " + "\"" +  ele + "\"");
+        });
 
     }
 
