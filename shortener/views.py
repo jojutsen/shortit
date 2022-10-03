@@ -54,6 +54,8 @@ def home(request):
 
 def direct_url(request, uid):
     url_data = UrlsDatabase.objects.get(uuid=uid)
+    url_data.url_visit_count+=1 
+    url_data.save()
     return redirect(url_data.url)
 
 
